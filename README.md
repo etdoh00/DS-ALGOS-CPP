@@ -3,7 +3,7 @@ This is an educational tool that has been shared on places like LinkedIn and Red
 I plan to cover:
 
 ---> Basic C++ code
-\n---> Pointers and Dynamic allocation
+---> Pointers and Dynamic allocation
 ---> Classes and Stack DS
 ---> Template Functions, Class and Stacks
 ---> Lists
