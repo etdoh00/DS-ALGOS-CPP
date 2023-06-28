@@ -2,8 +2,8 @@
 This is an educational tool that has been shared on places like LinkedIn and Reddit.
 I plan to cover:
 
---->Basic C++ code
----> Pointers and Dynamic allocation
+---> Basic C++ code
+\n---> Pointers and Dynamic allocation
 ---> Classes and Stack DS
 ---> Template Functions, Class and Stacks
 ---> Lists
