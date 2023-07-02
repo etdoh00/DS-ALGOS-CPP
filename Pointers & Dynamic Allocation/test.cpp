@@ -1,7 +1,7 @@
 #include <iostream>
 #include "basic_functions.h"
 
-int main()
+int main_swap()
 {
     int a = 0, b = 0;
     std::cout << "Please enter two numbers to swap : " << std::endl;

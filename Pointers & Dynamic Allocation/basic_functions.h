@@ -18,4 +18,8 @@ int divideXbyY(int x, int y);
 //pointer functions
 void swap(int& j, int& k);
 void swap_ptr(int* x, int* y);
+int arrFindMax(int* pointerIndex, int arrSize);
+int ptrFindMax(int* pointerIndex, int arrSize);
+int* ptrRevArray(int* pointerIndex, int size);
+int* arrReverseArray(int* pointerIndex, int size);
 #endif
