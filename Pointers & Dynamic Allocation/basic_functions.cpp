@@ -94,7 +94,7 @@ int* ptrRevArray(int* pointerIndex, int size)
     int* firstElement = pointerIndex; // using properties of pointers, this points to the first
     int* lastElement = pointerIndex + size - 1; // this points to last, using "0" + size - 1, to get element size -1 
     int midPoint = (size / 2);
-    while (--midPoint >= 0) // if size = 6, midpoint =3. Whilst 3 --> 2 --> --> 1 carry out the following:
+    while (midPoint-- > 0) // if size = 6, midpoint =3. Whilst 3 --> 2 --> --> 1 carry out the following:
     {
         int temp = *firstElement; // temp = first element, done by dereferencing the first index
         *firstElement++ = *lastElement; // value at first element = last, increase the index of the first element 
