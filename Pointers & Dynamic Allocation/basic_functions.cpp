@@ -82,8 +82,9 @@ int* arrReverseArray(int* pointerIndex, int size)
         int temp = pointerIndex[firstElement]; // similar to swapping the values above, a temp value needs to 
                                               // be assigned the element that will be first over written so its is not lost
         pointerIndex[firstElement] = pointerIndex[lastElement];
-        pointerIndex[lastElement] = pointerIndex[temp];
-        firstElement++, lastElement--; // index the elements
+        pointerIndex[lastElement] = temp;
+        firstElement++, 
+        lastElement--; // index the elements
                                         //[ first++ =====> MID <===== last--]
     }
     return pointerIndex;
