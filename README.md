@@ -1,5 +1,5 @@
 # DS-ALGOS-CPP
-This is an educational tool that will been shared on places like LinkedIn and Reddit.
+This is a tool that will been shared on places like LinkedIn and Reddit.
 I plan to cover:
 
 ---> Basic C++ code
