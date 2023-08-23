@@ -58,11 +58,14 @@ void slowMergeSort(int arr[], int start, int end)
 
 void fastMerge(int* a, int start, int end) // fastest response - O(n)
 {
-    int temp[100]; //create a temporary array 
+    int mid = (start+end)/2; //mid point for array
+   
     int k = start; //start for main array
     int i = start; // start for left array
-    int mid = (start+end)/2; //mid point for array
-    int j = mid; // start point for right array 
+    int j = mid+1; // start point for right array 
+   
+   
+    int temp[100]; //create a temporary array 
 
     while(i <= mid &&  j <= end) {
         if(a[i] < a[j]) //check if left < right, if true, insert element
@@ -81,7 +84,7 @@ void fastMerge(int* a, int start, int end) // fastest response - O(n)
         temp[k++] = a[j++]; /// insert left over elements from right 
     }
     
-    for(int z =0; z < end; z++)
+    for(int z =start; z <= end; z++)
     {
         a[z] = temp[z]; // paste results to original array 
     }
@@ -97,9 +100,17 @@ void fastMergeSort(int arr[], int start, int end)
     fastMergeSort(arr,start,mid); //sort left
     fastMergeSort(arr,mid+1,end); // sort right
 
-    fastMerge(arr,start,mid); //merge arrays
+    fastMerge(arr,start,end); //merge arrays
 
 }
 
-
+int main_merge()
+{
+    int arr[] = {2,5,7,3,1,7,4,45};
+    fastMergeSort(arr,0,7);
+    for(int i =0; i < 8; i++)
+    {
+        std::cout << arr[i] << " ";
+    }
+}
 
